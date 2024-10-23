@@ -3,10 +3,10 @@ name: SonarCloud Code Analysis
 on:
   push:
     branches:
-      - main
+      - master
   pull_request:
     branches:
-      - main
+      - master
 
 jobs:
   sonarcloud:
@@ -28,7 +28,7 @@ jobs:
 
       # Build the project (se necessário)
       - name: Build project
-        run: npm run build  # Substitua pelo comando de build adequado ao seu projeto, se houver
+        run: npm run build  
 
       # Run SonarCloud scan
       - name: Run SonarCloud scan
