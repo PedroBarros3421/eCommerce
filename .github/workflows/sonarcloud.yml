@@ -26,6 +26,10 @@ jobs:
       - name: Install dependencies
         run: npm install
 
+      # Instalar SonarScanner globalmente
+      - name: Install SonarScanner
+        run: npm install -g sonar-scanner
+
       # Build the project (se necessário)
       - name: Build project
         run: npm run build  
