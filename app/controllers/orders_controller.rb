@@ -7,7 +7,7 @@ class OrdersController < ApplicationController
       order.line_items << line_item
     end
     order.save!
-    new_cart = Cart.create(user: current_user)
+    # new_cart = Cart.create(user: current_user)
     session[:cart_id] = nil
   end
 
