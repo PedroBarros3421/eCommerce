@@ -13,9 +13,5 @@ class CustomersController < ApplicationController
       }
     end
   end
-
-  def customer_address
-
-  end
   
 end
